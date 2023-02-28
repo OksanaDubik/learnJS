@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What values will the while loop output?</title>
+</head>
+<body>
+<script>
+    /* Для каждого цикла запишите, какие значения он выведет. Потом сравните с ответом.
+             Оба цикла выводят alert с одинаковыми значениями или нет?
+             Префиксный вариант ++i:
+     */
+    'use strict';
+    let i = 0;
+    while (++i < 5) alert(i);//выведет 1,2,3,4
+
+    //  Постфиксный вариант value++
+    let value = 0;
+    while (value++ < 5) alert(value);//выведет 1,2,3,4,5
+
+
+</script>
+</body>
+</html>

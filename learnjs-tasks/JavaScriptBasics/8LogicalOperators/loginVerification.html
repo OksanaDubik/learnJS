@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login verification</title>
+</head>
+<body>
+
+<script>
+    'use strict';
+  let askUser = prompt('кто там?', 'кто там?');
+  if (askUser === 'Админ'){
+      let askLogin = prompt('пароль', 'пароль');
+      if(askLogin === 'Я главный'){
+          alert("Здравствуйте!")
+      }
+      else  if (askLogin === "" || askLogin ===null ){
+          alert("Отменено!")
+      }else {
+          alert("Неверный пароль!")
+      }
+  }else {
+      alert('Я вас не знаю')
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loop until input is invalid</title>
+</head>
+<body>
+
+<script>
+    'use strict';
+    let overOneHundred;
+    do {
+        overOneHundred = prompt(' ввести число, большее 100', 'число, большее 100');
+    } while (overOneHundred <= 100 || overOneHundred === null)
+</script>
+</body>
+</html>

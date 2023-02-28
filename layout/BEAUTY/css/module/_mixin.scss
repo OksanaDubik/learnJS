@@ -1,0 +1,9 @@
+@mixin fonts ($font-weight, $font-size, $line-height){
+  font-weight:$font-weight;
+  font-size:$font-size;
+  line-height:$line-height;
+}
+@mixin position ($display: flex, $justify-content: space-between){
+ display:$display;
+  justify-content:$justify-content;
+}

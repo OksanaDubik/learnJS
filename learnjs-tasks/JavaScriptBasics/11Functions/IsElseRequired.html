@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    /*Следующая функция возвращает true, если параметр age больше 18.
+В ином случае она запрашивает подтверждение через confirm и возвращает его результат:
+ */
+    // function checkAge(age) {
+    //     if (age > 18) {
+    //         return true;
+    //     } else {
+    //         // ...
+    //         return confirm('Родители разрешили?');
+    //     }
+    // }
+    //
+    // console.log(checkAge(16))
+    //Будет ли эта функция работать как-то иначе, если убрать else?
+
+    // function checkAge(age){
+    //  return    age > 18 ? true : confirm('Родители разрешили?')
+    // }
+    // console.log(checkAge(19))
+
+    function checkAge(age) {
+        if (age > 18) {
+            return true;
+        }
+
+        return confirm('Родители разрешили?');
+    }
+
+    console.log(checkAge(16))
+
+    // функция работать будет без else
+
+</script>
+</body>
+</html>
