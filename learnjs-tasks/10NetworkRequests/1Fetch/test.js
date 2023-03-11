@@ -1,6 +1,6 @@
 const requestURL = "https://jsonplaceholder.typicode.com/users";
 
-function sendRequest(method, url, body= null) {
+function sendRequest(method, url, body = null) {
     return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
         xhr.open(method, url)
@@ -19,23 +19,21 @@ function sendRequest(method, url, body= null) {
             reject(xhr.response)
         }
 
-        xhr.send(JSON.stringify(body) )
+        xhr.send(JSON.stringify(body))
     })
 
 }
 
-    // sendRequest('GET', requestURL)
-    //     .then(data => alert(   data ))
-    //     .catch(err => console.log(err))
+// sendRequest('GET', requestURL)
+//     .then(data => alert(   data ))
+//     .catch(err => console.log(err))
 let body = {
     name: 'Oksana',
     age: 26
 }
 sendRequest('POST', requestURL, body)
-    .then(data => console.log(data, JSON.stringify(body) ))
+    .then(data => console.log(data, JSON.stringify(body)))
     .catch(err => console.log(err))
-
-
 
 
 // describe("getUsers", function() {

@@ -14,8 +14,8 @@ f1500("test"); // показывает "test" после 1500 мс
 
 function delay(f, ms) {
 
-    return function() {
+    return function () {
         setTimeout(() => f.apply(this, arguments), ms);
     };
 
-};
+}

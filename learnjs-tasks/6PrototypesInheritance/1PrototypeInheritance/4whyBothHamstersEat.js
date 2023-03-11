@@ -1,4 +1,3 @@
-
 /*let hamster = {
   stomach: [],
 
@@ -27,7 +26,7 @@ alert( lazy.stomach ); // apple
 let hamster = {
     stomach: [],
     eat(food) {
-     this.stomach = [food];
+        this.stomach = [food];
     }
 };
 let lazy = {
@@ -35,10 +34,10 @@ let lazy = {
 };
 
 let speedy = {
-       __proto__: hamster
+    __proto__: hamster
 };
 
 speedy.eat("apple");
-console.log( speedy.stomach );
+console.log(speedy.stomach);
 
-console.log( lazy.stomach );
+console.log(lazy.stomach);

@@ -8,20 +8,21 @@
 Создайте функцию clear(elem), которая удаляет всё содержимое из elem.
 
 <ol id="elem">
-  <li>Привет</li>
-  <li>Мир</li>
+    <li>Привет</li>
+    <li>Мир</li>
 </ol>
 
 <script>
     let elem = document.querySelector('#elem')
-  function clear(elem) {
-      console.log(elem)
-   let li = elem.querySelectorAll('li')
 
-       li.forEach(el => ( el.innerText = '' ) )
-     }
+    function clear(elem) {
+        console.log(elem)
+        let li = elem.querySelectorAll('li')
 
-  clear(elem); // очищает список
+        li.forEach(el => (el.innerText = ''))
+    }
+
+    clear(elem); // очищает список
 </script>
 </body>
 </html>

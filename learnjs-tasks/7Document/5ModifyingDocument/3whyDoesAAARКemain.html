@@ -6,24 +6,24 @@
 </head>
 <body>
 <table id="table">
-  aaa
-  <tr>
-    <td>Тест</td>
-  </tr>
+    aaa
+    <tr>
+        <td>Тест</td>
+    </tr>
 </table>
 
 <script>
-  let tab = document.getElementById('table')
-  console.log(tab)
-  console.log(table); // таблица, как и должно быть
+    let tab = document.getElementById('table')
+    console.log(tab)
+    console.log(table); // таблица, как и должно быть
 
-  table.remove();
-  tab.remove();
-  console.log(tab)
-  // почему в документе остался текст "ааа"?
-  //Ответ: внутри <table> не может быть текста: в соответствии
-  // со спецификацией допускаются только табличные теги.
-  // Поэтому браузер показывает "aaa" до <table>.
+    table.remove();
+    tab.remove();
+    console.log(tab)
+    // почему в документе остался текст "ааа"?
+    //Ответ: внутри <table> не может быть текста: в соответствии
+    // со спецификацией допускаются только табличные теги.
+    // Поэтому браузер показывает "aaa" до <table>.
 
 </script>
 </body>

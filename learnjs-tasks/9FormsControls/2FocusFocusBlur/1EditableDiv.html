@@ -18,7 +18,7 @@ HTML-код разрешён.
     let area = null;
     let view = document.getElementById('view');
 
-    view.onclick = function() {
+    view.onclick = function () {
         editStart();
     };
 
@@ -27,13 +27,13 @@ HTML-код разрешён.
         area.className = 'edit';
         area.value = view.innerHTML;
 
-        area.onkeydown = function(event) {
+        area.onkeydown = function (event) {
             if (event.key == 'Enter') {
                 this.blur();
             }
         };
 
-        area.onblur = function() {
+        area.onblur = function () {
             editEnd();
         };
 

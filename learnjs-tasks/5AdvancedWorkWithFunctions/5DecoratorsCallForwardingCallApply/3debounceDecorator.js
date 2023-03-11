@@ -6,19 +6,20 @@
  */
 function debounce(f, ms) {
 
-  let isCooldown = false;
+    let isCooldown = false;
 
-  return function() {
-    if (isCooldown) return;
+    return function () {
+        if (isCooldown) return;
 
-    f.apply(this, arguments);
+        f.apply(this, arguments);
 
-    isCooldown = true;
+        isCooldown = true;
 
-    setTimeout(() => isCooldown = false, ms);
-  };
+        setTimeout(() => isCooldown = false, ms);
+    };
 
 }
+
 let f = debounce(console.log, 1000);
 
 f(1); // выполняется немедленно

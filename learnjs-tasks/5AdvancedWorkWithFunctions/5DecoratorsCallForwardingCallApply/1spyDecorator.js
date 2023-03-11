@@ -19,13 +19,14 @@ for (let args of work.calls) {
 
  */
 
-let fac = function f (n){
-    return (n !== 1) ? f(n+1) * n : n;
+let fac = function f(n) {
+    return (n !== 1) ? f(n + 1) * n : n;
 }
 
-let bac = function b (r, t){
-    return r+t
+let bac = function b(r, t) {
+    return r + t
 }
+
 function spy(func) {
     function wrapper(...arguments) {
         // мы используем ...args вместо arguments для хранения "реального" массива в wrapper.calls
@@ -38,5 +39,6 @@ function spy(func) {
 
     return wrapper;
 }
+
 bac = spy(bac);
 bac(1, 2)

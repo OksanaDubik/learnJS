@@ -29,7 +29,7 @@ let head = {
 
 let table = {
     pen: 3,
-   __proto__:head
+    __proto__: head
 };
 
 let bed = {
@@ -40,7 +40,7 @@ let bed = {
 
 let pockets = {
     money: 2000,
-    __proto__:bed
+    __proto__: bed
 };
 
 

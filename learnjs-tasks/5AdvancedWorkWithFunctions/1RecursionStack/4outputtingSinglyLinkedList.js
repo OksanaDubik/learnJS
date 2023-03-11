@@ -51,7 +51,7 @@ let list = {
 //цикл:
 
 
-while(list){
+while (list) {
     console.log(list.value);
     list = list.next
 }

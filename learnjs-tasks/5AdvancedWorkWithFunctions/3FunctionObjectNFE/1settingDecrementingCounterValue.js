@@ -12,13 +12,14 @@ P.S. Для того, чтобы сохранить текущее значен�
 function makeCounter() {
     let count = 0;
 
-    function counter(){
-        return  count++;
+    function counter() {
+        return count++;
     }
-    counter.set = function (value){
+
+    counter.set = function (value) {
         count = value;
     }
-    counter.decrease = function (){
+    counter.decrease = function () {
         count--;
     }
     return counter;
@@ -27,10 +28,10 @@ function makeCounter() {
 let counter = makeCounter();
 console.log(counter())
 
-counter.set(10) ;
+counter.set(10);
 
-console.log( counter() );
+console.log(counter());
 
 counter.decrease();
 
-console.log( counter() );
+console.log(counter());

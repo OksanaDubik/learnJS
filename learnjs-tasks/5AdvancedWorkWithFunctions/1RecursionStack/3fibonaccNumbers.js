@@ -30,12 +30,12 @@ P.S. Все запуски функций из примера выше долж�
 
 
 // на циклах
-function fibCycle(n){
+function fibCycle(n) {
     let fib1 = 0;
     let fib2 = 1;
     let fib3 = 1;
-    for(let i = 1; i<n; i++){
-        fib3 = fib1 +fib2;
+    for (let i = 1; i < n; i++) {
+        fib3 = fib1 + fib2;
         fib1 = fib2;
         fib2 = fib3;
     }

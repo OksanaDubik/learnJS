@@ -10,12 +10,14 @@ P.S. Подсказка: возможно вам стоит сделать ос�
  */
 const sum = (a) => {
     let sumToUp = a
+
     function func(b) {
         sumToUp += b
         return func
     }
+
     func.toString = function () {
-      return   sumToUp
+        return sumToUp
     }
 
     return func

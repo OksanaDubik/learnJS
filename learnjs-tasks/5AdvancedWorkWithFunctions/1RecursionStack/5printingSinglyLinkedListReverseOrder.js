@@ -18,14 +18,14 @@
 // console.log(f(list))
 
 //через рекурсию
-function f(list){
+function f(list) {
     let arr = [];
     arr.push(list.value);
-    if(list.next){
-      f(list.next)
+    if (list.next) {
+        f(list.next)
     }
     arr = arr.reverse()
-    return arr.forEach(el=> console.log(el))
+    return arr.forEach(el => console.log(el))
 }
 
 f(list)

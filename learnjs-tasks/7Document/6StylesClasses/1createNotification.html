@@ -11,42 +11,40 @@
 
 <script>
 
-  function showNotification(top = 5 , right = 5 , html ){
+    function showNotification(top = 5, right = 5, html) {
 
-    let element = document.createElement('div')
+        let element = document.createElement('div')
 
-      // element.className = 'class'
-element.style.height = '100px'
-      element.style.width = '100px'
-      element.style.background = 'red'
-      element.style.top = top + 'px';
-      element.style.right = right + 'px';
-      element.innerHTML = html;
+        // element.className = 'class'
+        element.style.height = '100px'
+        element.style.width = '100px'
+        element.style.background = 'red'
+        element.style.top = top + 'px';
+        element.style.right = right + 'px';
+        element.innerHTML = html;
 
-document.body.append(element)
-      setTimeout(()=> element.remove(), 1000)
-  }
-
-
-
-  setInterval (function (){
-
-      showNotification(10, 10, '<div>Hello</div>' );
-  } , 2500)
+        document.body.append(element)
+        setTimeout(() => element.remove(), 1000)
+    }
 
 
+    setInterval(function () {
 
-// let newInterval =  setInterval (function (){
-//
-//           showNotification(10, 10, '<div>Job</div>', 'class' );
-//       } , 1500)
-//
-//
-//
-//
-// setTimeout(function  (){
-//    clearInterval(newInterval)
-// }, 5000)
+        showNotification(10, 10, '<div>Hello</div>');
+    }, 2500)
+
+
+    // let newInterval =  setInterval (function (){
+    //
+    //           showNotification(10, 10, '<div>Job</div>', 'class' );
+    //       } , 1500)
+    //
+    //
+    //
+    //
+    // setTimeout(function  (){
+    //    clearInterval(newInterval)
+    // }, 5000)
 </script>
 </body>
 </html>

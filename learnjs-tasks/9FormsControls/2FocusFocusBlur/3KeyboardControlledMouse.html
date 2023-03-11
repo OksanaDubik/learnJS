@@ -35,7 +35,7 @@
 <script>
     mouse.tabIndex = 0;
 
-    mouse.onclick = function() {
+    mouse.onclick = function () {
         this.style.left = this.getBoundingClientRect().left + 'px';
         this.style.top = this.getBoundingClientRect().top + 'px';
 
@@ -43,7 +43,7 @@
     };
 
 
-    mouse.onkeydown = function(e) {
+    mouse.onkeydown = function (e) {
         switch (e.key) {
             case 'ArrowLeft':
                 this.style.left = parseInt(this.style.left) - this.offsetWidth + 'px';

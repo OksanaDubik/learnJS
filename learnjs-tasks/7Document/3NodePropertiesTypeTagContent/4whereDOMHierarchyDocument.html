@@ -1,25 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport"
-       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
 
 <script>
- /*Объектом какого класса является document?
+    /*Объектом какого класса является document?
 
-Какое место он занимает в DOM-иерархии?
+   Какое место он занимает в DOM-иерархии?
 
-Наследует ли он от Node или от Element, или может от HTMLElement?
+   Наследует ли он от Node или от Element, или может от HTMLElement?
 
- */
- console.log(document.constructor.name); // HTMLDocument
- console.log(HTMLDocument.prototype.constructor)//document – объект класса HTMLDocument.
- console.log(HTMLDocument.prototype.__proto__.__proto__.constructor.name)//Node
+    */
+    console.log(document.constructor.name); // HTMLDocument
+    console.log(HTMLDocument.prototype.constructor)//document – объект класса HTMLDocument.
+    console.log(HTMLDocument.prototype.__proto__.__proto__.constructor.name)//Node
 </script>
 </body>
 </html>

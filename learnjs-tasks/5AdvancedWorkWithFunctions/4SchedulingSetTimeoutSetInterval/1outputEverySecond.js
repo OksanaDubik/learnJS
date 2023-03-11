@@ -18,13 +18,13 @@
 
 function printNumbersTimeout(from, to) {
 
-setTimeout(function func (){
-    console.log(from);
-    from++
-    if( from < to+1){
-    setTimeout(func, 1000)
-    }
-}, 1000)
+    setTimeout(function func() {
+        console.log(from);
+        from++
+        if (from < to + 1) {
+            setTimeout(func, 1000)
+        }
+    }, 1000)
 }
 
 printNumbersTimeout(2, 5)

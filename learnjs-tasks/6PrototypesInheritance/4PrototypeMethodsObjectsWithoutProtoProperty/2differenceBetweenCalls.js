@@ -2,10 +2,11 @@
 Давайте создадим новый объект rabbit:
  */
 function Rabbit(name) {
-  this.name = name;
+    this.name = name;
 }
-Rabbit.prototype.sayHi = function() {
-  alert(this.name);
+
+Rabbit.prototype.sayHi = function () {
+    alert(this.name);
 };
 
 let rabbit = new Rabbit("Rabbit");

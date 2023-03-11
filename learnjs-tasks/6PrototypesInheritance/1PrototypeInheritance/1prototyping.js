@@ -25,7 +25,7 @@ alert( rabbit.jumps ); // ? (3)
 
 
     Ответ:
-true, берётся из rabbit.
+    true, берётся из rabbit.
     null, берётся из animal.
     undefined, такого свойства больше нет.
 

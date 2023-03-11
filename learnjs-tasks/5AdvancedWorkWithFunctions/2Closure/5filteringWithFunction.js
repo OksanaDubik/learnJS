@@ -19,6 +19,7 @@ alert( arr.filter(inArray([1, 2, 10])) ); // 1,2
  */
 
 let arr = [1, 2, 3, 4, 5, 6, 7];
+
 function inBetween(min, max) {
     return function (el) {
         return el >= min && el <= max
