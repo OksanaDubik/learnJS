@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    alert(document.body.lastChild.nodeType);
+    /*Что выведет этот код?
+    Во время выполнения <script> последним DOM-узлом является <script>, потому что браузер ещё не обработал остальную часть страницы.
+
+  Поэтому результатом будет 1 (узел-элемент).
+
+     */
+    console.dir(document)
+</script>
+</body>
+</html>
