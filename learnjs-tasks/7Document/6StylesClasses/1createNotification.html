@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  function showNotification(top = 5 , right = 5 , html ){
+
+    let element = document.createElement('div')
+
+      // element.className = 'class'
+element.style.height = '100px'
+      element.style.width = '100px'
+      element.style.background = 'red'
+      element.style.top = top + 'px';
+      element.style.right = right + 'px';
+      element.innerHTML = html;
+
+document.body.append(element)
+      setTimeout(()=> element.remove(), 1000)
+  }
+
+
+
+  setInterval (function (){
+
+      showNotification(10, 10, '<div>Hello</div>' );
+  } , 2500)
+
+
+
+// let newInterval =  setInterval (function (){
+//
+//           showNotification(10, 10, '<div>Job</div>', 'class' );
+//       } , 1500)
+//
+//
+//
+//
+// setTimeout(function  (){
+//    clearInterval(newInterval)
+// }, 5000)
+</script>
+</body>
+</html>

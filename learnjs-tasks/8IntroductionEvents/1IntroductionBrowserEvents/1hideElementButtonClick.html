@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="button" id="hider" value="Нажмите, чтобы спрятать текст" />
+
+<div id="text">Текст</div>
+
+<script>
+ document.querySelector('#hider').addEventListener('click', function (){
+   document.querySelector('#text').remove();
+ })
+
+
+</script>
+
+</body>
+</html>

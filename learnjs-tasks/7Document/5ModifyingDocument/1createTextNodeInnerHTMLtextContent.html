@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="element"></div>
+<div id="element1"></div>
+<div id="element2"></div>
+
+
+
+<script>
+    let elem = document.getElementById('element')
+    let elem1 = document.getElementById('element1')
+    let elem2 = document.getElementById('element2')
+    let text = '<div>text</div>'
+
+
+    elem.append(document.createTextNode(text))//вставляет строку как евть, вместе с тегами
+    console.dir(elem)
+
+    elem1.innerHTML =text//вставляет только строку
+    console.dir(elem1)
+    elem2.textContent = text//вставляет строку как евть, вместе с тегами
+    console.dir(elem2)
+
+</script>
+</body>
+</html>
