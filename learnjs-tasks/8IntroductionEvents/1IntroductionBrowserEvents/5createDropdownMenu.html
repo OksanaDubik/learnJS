@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span {
+            border: 2px solid darkgray;
+        }
+
+        .menu ul {
+            margin: 0;
+            list-style: none;
+            padding-left: 20px;
+            display: none;
+        }
+
+        .menu .title::before {
+            content: '▶ ';
+            font-size: 80%;
+            color: green;
+        }
+
+        .menu.open .title::before {
+            content: '▼ ';
+        }
+
+        .menu.open ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <span class="title">Сладости (нажми меня)!</span>
+    <ul>
+        <li>Пирожное</li>
+        <li>Пончик</li>
+        <li>Мёд</li>
+    </ul>
+</div>
+
+
+<script>
+    let menuElem = document.querySelector('div');
+
+    let titleElem = menuElem.querySelector('.title');
+
+    titleElem.onclick = function () {
+        menuElem.classList.toggle('open');
+    };
+
+</script>
+</body>
+</html>
